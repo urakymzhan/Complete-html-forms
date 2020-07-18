@@ -1,0 +1,48 @@
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    background-color: #cca3d8;
+    width: 800px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #000;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+input, button, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #fff;
+}
+input[type="submit"] {
+    background-color: #3399ff;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 5%;
+}
+
+input[type="color"] {
+    padding: 0;
+}
+fieldset {
+    margin: 20px 0;
+}
+
+input[type="number"]:out-of-range {
+    background-color: #ff3333;
+} 
+input[type="number"]:in-range {
+    background-color: lightgreen;
+} 

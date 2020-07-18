@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML - FORMS</title>
+    <link rel="stylesheet" type="text/css" href="html-forms.css">
+</head>
+<body>
+
+<!-- FORM element -->
+<form action="/my_url_to_send_my_data" method="post">
+    
+    <h1>CONTACT FORM</h1>
+
+    <input type="search" placeholder="Search any user">
+
+    <label for="name"> Name</label>
+    <input type="text" placeholder="Name" id="name" name="name" required> 
+    
+    <label for="lname"> Last Name</label>
+    <input type="text" placeholder="Last Name" id="lname" name="lname" required>
+
+    <label for="email">Email</label>
+    <input type="email" placeholder="Email" id="email" name="email" required>
+    
+    <label for="password">Password</label>
+    <input type="password" placeholder="Password" id="password" name="password" required>
+ 
+    <label for="age">Age</label>
+    <input type="number" id="age" placeholder="Age" min="16" max="100" value="120" required>
+    
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone" placeholder="Your phone number in format 111-222-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+    <label for="linkedin">Linkedin URL</label>
+    <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/your_username">
+
+    <label for="availability">Provide your availability</label>
+    <input type="datetime-local" id="availability" >
+
+    <label for="message">Your Message</label>
+    <textarea id="message" placeholder="Your specific message to us."></textarea>
+    
+    <fieldset>
+        <legend>Choose your favourite TV show?</legend>
+
+        <label for="dark">Dark</label>
+        <input type="checkbox" id="dark" value="dark" name="dark" checked>
+
+        <label for="gthrones">Game Of Thrones</label>
+        <input type="checkbox" id="gthrones" value="gthrones" name="gthrones">
+
+         <label for="ozark">Ozark</label>
+        <input type="checkbox" id="ozark" value="ozark" name="ozark">
+
+    </fieldset>
+
+     <fieldset>
+        <legend>Are you old enough to sumbit this form?</legend>
+
+        <label for="yes">Yes</label>
+        <input type="radio" id="yes" name="YesOrNo" checked>
+
+        <label for="no">No</label>
+        <input type="radio" id="no" name="YesOrNo">`
+        
+    </fieldset>
+    
+    <label for="fruits">What is your favourite fruit ?</label>
+    <select id="fruits" name="fruits">
+        <option value="melon">Melon</option>
+        <option value="orange">Orange</option>
+        <option value="apple">Apple</option>
+    </select>
+    <label for="avatar">Your Avatar</label>
+    <input type="file" id="avatar" accept="audio/*|video/*|image/*">
+
+    <label for="color">Lastly, choose your favourite color ?</label>
+    <input type="color" id="color" name="color" value="#fff">
+
+    <input type="submit" id="submit" value="Submit">
+
+    <!-- BETTER OPTION -->
+    <!-- <button id="submit"> Submit </button> -->
+</form>
+
+</body>
+</html>
